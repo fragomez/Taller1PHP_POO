@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <title>Taller 1 - PHP POO</title>
+</head>
+<body> 
+    <h5>1. Este programa muestra el signo zodiacal de una persona. 
+        Para ello el usuario debe introducir únicamente el día y 
+        el mes de nacimiento y el programa determinará inmediatamente 
+        el signo zodiacal de la persona.
+    </h5>
+        <form id="zodiacoForm" action="api.php" method="post">
+            <label>Ingrese el día de nacimiento</label>
+            <input type="text" name="dia">
+            <label>Ingrese el mes de nacimiento</label>
+            <input type="text" name="mes">
+            <input type="submit" value="zodiaco">
+        </form>
+        <pre id="resultado">
+
+        </pre>
+</body>
+</html>
