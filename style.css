@@ -1,6 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
+.header{
+    margin: 20px auto;
+}
+#zodiacoForm{
+    width: 50%;
 }
 
 input{
@@ -8,4 +10,12 @@ input{
 }
 input[type="submit"]{
     margin-top: 10px;
+}
+.resultado{
+    padding: 20px;
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
 }
