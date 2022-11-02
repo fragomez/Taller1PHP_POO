@@ -17,31 +17,58 @@
 
 <body>
     <div class="container header">
-        <h5>1. Este programa muestra el signo zodiacal de una persona.
-            Para ello el usuario debe introducir únicamente el día y
-            el mes de nacimiento y el programa determinará inmediatamente
-            el signo zodiacal de la persona.
+        <h5>2. De la galería de productos, el usuario introducirá el código y el número de unidades del producto que
+            desea comprar. El programa determinará el total a pagar, como una factura. Ejemplo de factura.
         </h5>
     </div>
     
     <hr>
+    <div class="container codigos">
+        <table class="table table-striped table-dark table-hover">
+            <tr>
+                <th>Código</th>
+                <th>Producto</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Camisas</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>Pantalones</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>Correas</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>Medias</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>Zapatos</td>
+            </tr>
+            
+        </table>
+    </div>
     <div class="container formulario">
-        <form id="zodiacoForm" action="api.php" method="post" class="align-items-center">
+        <form id="calcular" action="api.php" method="post" class="align-items-center">
             <div class="col-auto">
-                <label class="form-label">Ingrese el día de nacimiento</label>
-                <input type="text" name="dia" class="form-control form-control-lg">
+                <label class="form-label">Ingrese el código del producto</label>
+                <input type="number" name="codigo" class="form-control form-control-lg">
             </div>
             <div class="col-auto">
-                <label class="form-label">Ingrese el mes de nacimiento</label>
-                <input type="text" name="mes" class="form-control form-control-lg">
+                <label class="form-label">Ingrese la cantidad de productos</label>
+                <input type="number" name="cantidad" class="form-control form-control-lg">
             </div>
 
-            <input type="submit" value="Conocer signo" class="btn btn-dark">
+            <input type="submit" value="Pagar" class="btn btn-dark">
         </form>
         
     </div>
     <div id="resultado" class="display-3 resultado">
-
+        Total: 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

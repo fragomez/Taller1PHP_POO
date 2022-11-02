@@ -1,7 +1,14 @@
 .header{
     margin: 20px auto;
 }
-#zodiacoForm{
+.formulario, .codigos{
+    display: flex;
+    justify-content: center;
+}
+.codigos{
+    width: 400px;
+}
+#calcular{
     width: 50%;
 }
 
@@ -14,8 +21,4 @@ input[type="submit"]{
 .resultado{
     padding: 20px;
     text-align: center;
-}
-.formulario{
-    display: flex;
-    justify-content: center;
 }
